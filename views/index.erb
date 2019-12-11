@@ -1,0 +1,5 @@
+<% @students.each do |student| %>
+<ul>
+  <a href="/students/<%= student.id %>"><li> <%=student.format_name%> </li></a>
+</ul>
+<% end %>

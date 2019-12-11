@@ -6,7 +6,7 @@
   <select name="house_id" id="house_select">
     <% @houses.each do |house| %>
 
-    <option value="<%= house.id %>"> <%= house.name.capitalize %> </option>
+    <option value="<%= house.id %>" <%= "selected" if house.id == @student.house_id %>> <%= house.name.capitalize %> </option>
 
     <% end %>
 

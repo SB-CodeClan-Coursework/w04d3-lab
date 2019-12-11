@@ -4,7 +4,7 @@
   <select name="house_id" id="house_select">
     <% @houses.each do |house| %>
 
-    <option value="<%= house.id %>"> <%= house.name %> </option>
+    <option value="<%= house.id %>"> <%= house.name.capitalize %> </option>
 
     <% end %>
 
